@@ -20,20 +20,11 @@ const users = [
   { id: "9", name: "Daniel Cane", age: 51, hasDog: true },
 ];
 
-// function filterDogOwers(usersArr) {
-//   return usersArr.map((user) => user.hasDog);
-// }
-// const userHasDog = filterDogOwers(users);
-// console.log(userHasDog);
-
 function filterDogOwers(usersArr) {
   return usersArr.filter((user) => user.hasDog);
 }
-const hasDog = filterDogOwers(users);
-function userHasDog(hasDog) {
-  return hasDog.map((user) => user.name);
-}
-console.log(userHasDog(hasDog));
+
+console.log(filterDogOwers(users));
 
 function filterAdults(usersArr) {
   return usersArr.filter((user) => user.age >= 18);

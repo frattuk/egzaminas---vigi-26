@@ -21,13 +21,13 @@ const renderCard = (brand) => {
   brand.models.forEach((model) => {
     const modelEl = document.createElement("li");
     modelEl.textContent = model;
+    modelEl.style.color = "darkviolet";
     listEl.append(modelEl);
   });
 
   brandNameEl.style.textAlign = "center";
-  brandNameEl.style.color = "blue";
+  brandNameEl.style.color = "darkblue";
   card.className = "card";
-  card.style.backgroundColor = "#f3f3f3";
   card.append(brandNameEl, listEl);
   document.getElementById("output").append(card);
 };
